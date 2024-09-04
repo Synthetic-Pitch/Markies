@@ -1,0 +1,106 @@
+.cart-payment-modal {
+
+  width: 80%;
+  border: none;
+ 
+}
+.root {
+  --height: 2px;
+}
+.cart-container-payment{
+  height: 290px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 20%);
+  
+}
+.cart-container-payment div {
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.modal-gcash,.modal-paypal,.modal-visa,.modal-amazon,.modal-cod{
+  height: 37px;
+  width: 80px;
+  grid-column: 1/2;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+
+}
+.modal-gcash {
+ 
+  grid-row: 1/2;
+}
+.modal-paypal {
+  height: 46px;
+  grid-row: 2/3;
+}
+.modal-visa{
+  grid-row: 3/4;
+}
+
+/* cart-voucher-modal */
+
+.cart-voucher-modal{
+  border: none;
+  width: 80%;
+  min-height: 100px;
+  max-height: 50vh;
+}
+.cart-voucher-container{
+  display: flex;
+}
+
+.cart-modal-close{
+  border: none;
+  margin-top: 2rem;
+  background-color: rgb(209, 209, 209);
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+.cart-modal-claim-voucher{
+  border: none;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: rgb(209, 209, 209);
+}
+
+.cart-modal-container {
+  height: 200px;
+  overflow: scroll;
+}
+
+.cart-container-item-map{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+}
+
+.cart-container-map-img {
+  grid-column: 1/2;
+  height: 50px;
+}
+.cart-container-map-img img {
+  height: 100%;
+  width: 100%;
+}
+.cart-container-map-info{
+display: flex;
+}
+.cart-container-map-info span {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-container-map-info button {
+  height: 100%;
+  border: none;
+  width: 50%;
+}

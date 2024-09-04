@@ -1,0 +1,102 @@
+@font-face {
+  font-family: jomhuria;
+  src: url('../../assets//Fonts/Jomhuria-Regular.ttf');
+}
+@font-face {
+  font-family: inknutAntiqua;
+  src: url('../../assets//Fonts/InknutAntiqua-SemiBold.ttf');
+}
+.login {
+  background: linear-gradient(to bottom,#FFF4D7,#484138);
+  height: 100vh;
+  width: 100vw;
+}
+.bacground {
+  height: 100vh;
+  width: 100vw;
+  background: url('../../assets//images/BAckground img.png');
+  overflow: hidden;
+  display: grid;
+  align-content: space-evenly;
+  
+}
+.bacground h1 {
+  font-family: jomhuria;
+  font-weight: 200;
+  padding-left: .6em;
+  color: white;
+  font-size: 5rem;
+  margin: 0px;
+}
+.login-box{
+  
+  height: 350px;
+  width: 85%;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.20);
+  overflow: hidden;
+  display:grid;
+  grid-template-rows:  80% 1fr;
+}
+.grid-1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  align-items: center;
+  justify-content: center;
+}
+.grid-1 span{
+  color: rgb(121, 3, 3);
+}
+.impulsive{
+  margin-top: 40px;
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.impulsive button,.impulsive input{
+  width: 100%;
+  height:60px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.impulsive input{
+  box-sizing: border-box;
+  padding:0px 20px;
+}
+.impulsive button:active {
+  scale: 1.01;
+}
+
+.grid-2 hr{
+  border: none;
+  height: 2px;
+  background: black;
+  width: 70%;
+}
+
+.circle img {
+  width: 100%;
+}
+.login-footer-text{
+  color: rgb(211, 211, 211);
+  padding: 0px 30px;
+  font-size: 15px;
+}

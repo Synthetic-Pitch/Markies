@@ -1,0 +1,173 @@
+
+.profilecom{
+  
+}
+.profile-container-img {
+  height: 170px;
+  background: rgb(227, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Added to center horizontally */
+}
+
+.profile-con1 {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-con2 {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.profile-user-photo{
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  background-color: rgb(194, 193, 193);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.profile-user-photo img {
+  height: 100%;
+  max-width:100%;
+  object-fit: cover;
+}
+
+.profile-user-photo span {
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.profile-exchange{
+  margin-bottom: 80px;
+  height: 20px;
+  width: 20px;
+}
+
+.profile-exchange img{
+  height: 100%;
+}
+
+.profile-con2-container {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-con2-container-two{
+  margin-top: 40px;
+}
+.profile-con2-container-name{
+  margin-top: 40px;
+}
+.profile-con2-container input {
+  height: 20px;
+  width: 90%;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  background: none;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.profile-con2-container input::placeholder {
+ font-size: 16px;
+ text-align: center;
+ color: rgb(85, 85, 85);
+ letter-spacing: 2px;
+}
+
+.profile-con2-container hr {
+  border: none;
+  height: 1px;
+  width: 90%;
+  margin: 0px;
+  background-color: black;
+}
+
+.profile-con2-container-user{
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* Adress */
+
+:root{
+  --profile-element-height: 70px; 
+}
+
+.profile-com-adress {
+ display: flex;
+ justify-content: center;
+ width: 100vw;
+}
+
+.profile-com-adress-container {
+  padding-top: 7px;
+  background-color: rgb(238, 228, 217);
+  margin-top: 10px;
+  width: 95vw;
+  border-radius: 20px;
+}
+
+.profile-com-adress-firstname,.profile-com-adress-Surename{
+  height: var(--profile-element-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-com-adress-firstname input,.profile-com-adress-Surename input {
+  outline: none;
+  text-align: center;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 20px;
+  overflow: hidden;
+}
+.profile-com-adress-firstname hr,.profile-com-adress-Surename hr {
+  border: none;
+  width: 100%;
+  height: 1.2px;
+  background: rgb(128, 128, 128);
+}
+
+
+/* Google */
+
+.profile-com-google {
+  margin-top: 10px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-com-google button{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.profile-com-google button img {
+  height: 100%;
+  width: 100%;
+}

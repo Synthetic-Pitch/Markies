@@ -1,0 +1,11 @@
+.main-menu-com{
+  background: url('../../assets/images/Body.png');
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.main-menu-container{
+  min-height: calc(100dvh - 115px - 150px);
+}

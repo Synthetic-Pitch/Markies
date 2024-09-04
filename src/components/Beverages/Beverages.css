@@ -1,0 +1,8 @@
+.beverages-com{
+  background-color: pink;
+  height: calc(100dvh - 100px);
+}
+.geges{
+  height: 200px;
+  background-color: green;
+}

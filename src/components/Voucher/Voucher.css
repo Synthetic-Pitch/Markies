@@ -1,0 +1,54 @@
+.voucher-com{
+  background: rgb(83, 82, 82);
+  min-height: calc(100dvh - 100px);
+}
+.voucher-com p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(188, 188, 188);
+  font-weight: 700;
+  font-size: 20px;
+}
+/* voucher map */
+
+.voucher-map{
+  display: flex;
+  justify-content: center;
+}
+
+.voucher-container{
+  height: 100px;
+  width: 95%;
+  margin-bottom: 7px;
+  display: flex;
+}
+.v-p-1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.v-p-1 img {
+  height: 90%;
+  width: 100%;
+}
+.v-p-2{
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+}
+.v-p-2 button {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.v-p-2 button span {
+  background-color: pink;
+}
+
+.no-vouchers {
+  color: rgb(194, 194, 194);
+  font-size: 16px;
+}

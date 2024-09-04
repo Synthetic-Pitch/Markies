@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Jomhuria;
+  src: url('../../assets/Fonts/Jomhuria-Regular.ttf');
+}
+
+.main-menu-footer {
+  height: 150px;
+  background: url('../../assets/images/brownBackground.png');
+  display: flex;
+  align-items: center;
+}
+
+.branches {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.branches-container {
+  width: 100%;
+  height: 100%;
+}
+
+.branches-container h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.branches-container ul {
+  height: 100px;
+  width: 100%;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.branches-container li {
+  display: flex;
+  justify-content: center;
+  margin-left: 2px;
+  font-size: 23px;
+  height: auto;
+  letter-spacing: 1px;
+  font-family: Jomhuria;
+  color: rgb(82, 82, 82);
+}
+
+.contactUs {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.contactUs-container h2 {
+  margin: 0px;
+}
+
+.contact-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-icons img{
+  height: 80%;
+}
+
+/* Cart Footer */
+
+.cart-footer{
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;
+  
+  height: 180px;
+  background-color: #E1DFDF;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2px;
+}
+
+.footer-container-info{
+  height: 70%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.footer-container-info span{
+  height: 35px;
+  font-size: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.cart-container-info{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 7px;
+}
+.cart-container-info button{
+  border: none;
+  margin-left: 10px;
+}
+
+
+.cart-checkout{
+  background: rgb(141, 141, 141);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+

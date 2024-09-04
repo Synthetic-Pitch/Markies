@@ -1,0 +1,76 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: url('../../assets/images/brownBackground.png');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 2px 12px black;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.menu {
+  height: 70%;
+  width: 90px;
+}
+
+.menu img {
+  height: 100%;
+}
+
+.inputed {
+  background: black;
+  gap: 1px;
+  height: 70%;
+  width: 190px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.inputed div {
+  background: white;
+  height: 100%;
+  width: 100%;
+  display: flex; /* Ensure child elements inside div are also flexed */
+  align-items: center;
+  justify-content: center;
+  margin: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.inputed div img {
+  height: 40%;
+  width: 50%;
+}
+
+.inputed input {  
+  width: 6px;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: 0px;
+  outline: none;
+}
+
+.profile {
+  height: 72%;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile img {
+  height: 100%;
+  width: 100%;
+}
