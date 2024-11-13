@@ -39,15 +39,15 @@ function AppContent() {
     <> 
       {!isLoginPage && <Header />}
       <Routes>
-        <Route path='/login' element={<Login />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/mainMenu' element={<MainMenu />} />
-        <Route path='/desert' element={<Desert/>} />
-        <Route path='/beverages' element={<Beverages/>} />
-        <Route path='/cart' element={<Cart/>} />
-        <Route path='/vouchers' element={<Vouchers/>} />
-        <Route path='/profile' element={<Profile/>}/>
-        <Route path='/pending' element={<Pending/>}/>
+      <Route path="/Markies/login" element={<Login />} />
+        <Route path="/Markies/home" element={<Home />} />
+        <Route path="/Markies/mainMenu" element={<MainMenu />} />
+        <Route path="/Markies/desert" element={<Desert />} />
+        <Route path="/Markies/beverages" element={<Beverages />} />
+        <Route path="/Markies/cart" element={<Cart />} />
+        <Route path="/Markies/vouchers" element={<Vouchers />} />
+        <Route path="/Markies/profile" element={<Profile />} />
+        <Route path="/Markies/pending" element={<Pending />} />
       </Routes>
     </>
   );
