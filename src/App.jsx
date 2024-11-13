@@ -23,7 +23,7 @@ function App() {
   return (
    <GlobalContext>
       <GoogleOAuthProvider clientId="795468337489-oqs3dg7q59raqliejpvu5h6nlc70apuf.apps.googleusercontent.com">
-        <Router>
+        <Router basename='/Markies'>
          <AppContent />
         </Router>
       </GoogleOAuthProvider>
