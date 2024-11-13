@@ -6,7 +6,7 @@ import sendIcon from '../../../assets/web-icon/send-button.png'
 
 const MessageModal = () => {
   const { UserInfo, servicesBtn, setServicesBtn, chatBox, setChatBox } = useContext(MyContext);
-
+  
   const ModalRef = useRef(null);
 
   useEffect(() => {
