@@ -8,18 +8,18 @@ import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-
-
 const Header = () => {
-  const {setSlider,slider,setUserInput,ProfileImg} = useContext (MyContext)
+  const {setSlider,slider,setUserInput,ProfileImg} = useContext (MyContext);
   const navigate = useNavigate()
-
+  
   const  handleslider =()=>{
     setSlider(!slider)
-  }
+  };
+
   const handleProfile=()=>{
     navigate('/profile')
-  }
+  };
+
 
   return (
     <>  

@@ -65,9 +65,10 @@
 }
 
 .profile {
-  height: 72%;
-  width: 80px;
+  height: 65%;
+  width: 65px;
   border-radius: 50%;
+  
   overflow: hidden;
 }
 .profile img {

@@ -1,6 +1,6 @@
-.filtered-container{
+.filtered-container {
   background-color: hsla(0, 0%, 73%, 0.7);
-  height: 180px;
+  min-height: 180px;
   width: 95%;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -9,33 +9,31 @@
   padding-bottom: 8px;
   border-radius: 10px;
   flex-grow: 1;
-
 }
 
-.filter-phase{
- 
+.filter-phase {
 }
 
-.filter-price{
+.filter-price {
   width: 90px;
   height: 25px;
-  background: #DDCCB2;
+  background: #ddccb2;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
 }
-.filter-img-container{
+.filter-img-container {
   height: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.filter-img-container img{
+.filter-img-container img {
   height: 100%;
   width: 95%;
 }
-.filter-phase button{
+.filter-phase button {
   width: 90%;
   height: 25px;
   position: relative;
@@ -46,8 +44,10 @@
   letter-spacing: 1px;
   border: none;
   outline: none;
+  background-color: rgb(136, 136, 136);
+  margin-bottom: 2px;
 }
-.filter-name{
+.filter-name {
   display: flex;
   justify-content: center;
   align-items: center;

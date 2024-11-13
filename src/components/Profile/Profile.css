@@ -1,6 +1,6 @@
 
-.profilecom{
-  
+.profile-header{
+
 }
 .profile-container-img {
   height: 170px;
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Added to center horizontally */
+  
 }
 
 .profile-con1 {
@@ -27,11 +27,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-
-.profile-user-photo{
+.profile-user-photo {
   border-radius: 50%;
   height: 120px;
   width: 120px;
@@ -41,9 +39,10 @@
   justify-content: center;
   overflow: hidden;
 }
+
 .profile-user-photo img {
   height: 100%;
-  max-width:100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -52,13 +51,13 @@
   padding: 20px 20px;
 }
 
-.profile-exchange{
+.profile-exchange {
   margin-bottom: 80px;
   height: 20px;
   width: 20px;
 }
 
-.profile-exchange img{
+.profile-exchange img {
   height: 100%;
 }
 
@@ -70,12 +69,15 @@
   justify-content: center;
   align-items: center;
 }
-.profile-con2-container-two{
+
+.profile-con2-container-two {
   margin-top: 40px;
 }
-.profile-con2-container-name{
+
+.profile-con2-container-name {
   margin-top: 40px;
 }
+
 .profile-con2-container input {
   height: 20px;
   width: 90%;
@@ -86,11 +88,12 @@
   text-align: center;
   letter-spacing: 1px;
 }
+
 .profile-con2-container input::placeholder {
- font-size: 16px;
- text-align: center;
- color: rgb(85, 85, 85);
- letter-spacing: 2px;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(85, 85, 85);
+  letter-spacing: 2px;
 }
 
 .profile-con2-container hr {
@@ -101,73 +104,244 @@
   background-color: black;
 }
 
-.profile-con2-container-user{
+.profile-con2-container-user {
   margin-top: 20px;
   letter-spacing: 2px;
   font-weight: 700;
 }
 
-/* Adress */
+/* Main */
 
-:root{
-  --profile-element-height: 70px; 
-}
-
-.profile-com-adress {
- display: flex;
- justify-content: center;
- width: 100vw;
-}
-
-.profile-com-adress-container {
-  padding-top: 7px;
-  background-color: rgb(238, 228, 217);
-  margin-top: 10px;
-  width: 95vw;
-  border-radius: 20px;
-}
-
-.profile-com-adress-firstname,.profile-com-adress-Surename{
-  height: var(--profile-element-height);
+.profile-main{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.profile-com-adress-firstname input,.profile-com-adress-Surename input {
-  outline: none;
-  text-align: center;
-  background: none;
-  border: none;
-  box-sizing: border-box;
-  font-size: 16px;
-  height: 20px;
+  align-items: center;
   overflow: hidden;
 }
-.profile-com-adress-firstname hr,.profile-com-adress-Surename hr {
+.profile-main-hr{
+  margin-top: 10px;
   border: none;
+  height: 2px;
   width: 100%;
-  height: 1.2px;
-  background: rgb(128, 128, 128);
+  background: black;
+}
+.profile-main-button{
+  padding: 5px 40px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background-color: rgb(215, 215, 215);
+  margin-top: 7px;
+}
+.profile-main-container{
+  padding-top: 7px;
+  margin-top: 10px;
+  width: 95vw;
+  background: rgba(231, 224, 219, 1); 
+  box-shadow: 0 0 5px black;
+  overflow: hidden;
+}
+.profile-main-child{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  width: 95%;
+  margin: auto;
+}
+.profile-main-child input{
+  background: none;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+}
+.profile-main-child hr{
+  width: 100%;
+  border: none;
+  height: 2px;
+  background: black;
 }
 
-
-/* Google */
-
-.profile-com-google {
-  margin-top: 10px;
-  background-color: pink;
+.profile-main-saved-modal{
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 50vw;
+}
+.profile-main-saved-modal h4{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+.profile-bday-openModal {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+.profile-main-bday-display{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content:start;
+  gap: 7px;
+}
+.profile-main-bday-display span{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.🙂{
+  color: #545454;
+}
+.☹{
+  color: black;
+}
+.profile-bday-openModal button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 90px;
+  gap: 10px;
+  border: 0;
+  border-radius: 10px;
 }
 
-.profile-com-google button{
-  border: 1px solid black;
-  border-radius: 5px;
+.profile-bday-openModal button div {
+  height: 20px;
+  width: 30px;
 }
-.profile-com-google button img {
+
+.profile-bday-openModal button div img {
   height: 100%;
+  width: auto;
+}
+
+.profile-bday-openModal button span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #757575;
+}
+
+/* Complete Name */
+.profile-name-modal{
+  border: 2px solid;
+  border-radius: 10px;
+}
+.profile-name-modal code{
+  display: flex;
+  
+  font-size: 17px;
+  padding-bottom: 10px;
+
+}
+.profile-name-modal div{
+  display: flex;
+  justify-content: end;
   width: 100%;
+}
+.profile-name-modal button{
+
+  width: 50%;
+  letter-spacing: 1px;
+  align-self: end;
+  border: .5px solid black;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 2px;
+}
+
+/* FOOTER */
+
+.profile-footer{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-footer-container{
+  width: 95vw;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.profile-footer-icon-container{
+  height: 90%;
+  width: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-footer-icon-container img{
+  height: 90%;
+  width: auto;
+  object-fit: contain;
+}
+.profile-footer-services-text{
+  width: 55%;
+  height: 90%;
+  display: flex;
+  align-items:center;
+  
+}
+.profile-footer-services-text span{
+  margin-left:10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.profile-footer-btn {
+  width: 25%; /* Fixed width for the button container */
+  height: 100%; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-footer-btn button {
+  position: relative;
+  padding: 0;
+  background: rgba(217, 217, 217, 1);
+  border: none;
+  border-radius: 18px;
+  height: 80%;
+  width: 80%;
+  overflow: hidden; 
+}
+
+.profile-footer-btn div {
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: rgb(97, 109, 109);
+
+}
+
+.to-right {
+  transform: translateX(100%);
+  transition-duration: .2s;
+}
+
+.to-left {
+  transform: translateX(0%);
+  transition-duration: .2s;
+}
+
+.profile-footer-btn-arrow {
+  display: flex;
+  justify-content: center;
+  background: none !important;
+}
+.profile-footer-btn-arrow img {
+
+  height: 90% !important;
+  object-fit: contain !important;
 }

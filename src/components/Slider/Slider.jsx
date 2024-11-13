@@ -1,7 +1,8 @@
 import './Slider.css'
-import { MyContext } from '../../Context/GlobalContext'
+
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { MyContext } from '../../Context/GlobalContext'
 
 const Slider = () => {
   const {slider}=useContext(MyContext)

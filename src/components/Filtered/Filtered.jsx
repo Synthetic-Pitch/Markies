@@ -35,10 +35,6 @@ const Filtered = ({ items }) => {
       navigate('/cart')
     }
   };
-
-  useEffect(() => {
-    console.log(Order);
-  }, [Order]);
   
   useEffect(() => {
     if (Modal) {

@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from "react";
-import "./Profile.css";
-import exchange from  "../../assets/web-icon/exchange.png"
-import { MyContext } from "../../Context/GlobalContext";
+import "../Profile.css";
+import exchange from  "../../../assets/web-icon/exchange.png"
+import { MyContext } from "../../../Context/GlobalContext";
 
-const ProfileCom = () => {
+const ProfileHeader = () => { 
 
   const {ProfileImg,setProfileImg,userName,setUserName} = useContext(MyContext)
-
+  
   const [nameCheck,setNameCheck] = useState(false);
 
   useEffect(()=>{
@@ -18,7 +18,7 @@ const ProfileCom = () => {
   const handleInsertImg = () => {
     document.getElementById("fileInput").click(); 
   };
-
+  
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -29,15 +29,14 @@ const ProfileCom = () => {
       reader.readAsDataURL(file); // Read the file as a data URL
     }
   };
-
+  
   const handleUserName = (e) => {
     const name = e.target.value;
     setUserName(name); 
-    console.log(userName);
   };
   
   return (
-    <div className="profilecom">
+    <div className="profile-header">
       
       <div className="profile-container-img">
         <div className="profile-con1">
@@ -56,7 +55,7 @@ const ProfileCom = () => {
           <div className="profile-con2-container">
             
             {
-              nameCheck ? 
+              nameCheck ? //false
               <div className="profile-con2-container-two">
                 <input onChange={handleUserName} type="text" placeholder="enter name" />
                 <hr />
@@ -69,7 +68,7 @@ const ProfileCom = () => {
           
         </div>
       </div>
-
+           
       {/* Hidden file input */}
       <input 
         type="file" 
@@ -84,7 +83,7 @@ const ProfileCom = () => {
   );
 };
 
-export default ProfileCom;
+export default ProfileHeader;
 
 
 
