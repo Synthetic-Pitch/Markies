@@ -6,7 +6,7 @@ import sendIcon from '../../../assets/web-icon/send-button.png'
 
 const MessageModal = () => {
   const { UserInfo, servicesBtn, setServicesBtn, chatBox, setChatBox } = useContext(MyContext);
-  
+
   const ModalRef = useRef(null);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const Header = ({ setServicesBtn }) => {
         <span className="h-4 w-4 bg-gray-600 rounded-full"></span>
       </div>
 
-      <div className="bg-gray-400 h-10 w-10 flex justify-center items-center rounded-full mr-[10px]">
+      <div className="bg-gray-200 min-h-[20px] w-[30px] flex justify-center items-center rounded-full mr-[10px]">
         <button onClick={handleClick}>X
         </button>
       </div>
