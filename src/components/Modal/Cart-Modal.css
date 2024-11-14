@@ -45,9 +45,9 @@
 
 .cart-voucher-modal{
   border: none;
-  width: 80%;
   min-height: 100px;
   max-height: 50vh;
+  background: transparent;
 }
 .cart-voucher-container{
   display: flex;
