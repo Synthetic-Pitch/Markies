@@ -1,11 +1,11 @@
-
+import DesertCom from "../components/Desert/Desert-com";
 
 const Desert = () => {
   return (
     <div className="desert">
-      sdsd212
+      <DesertCom />
     </div>
-  )
-}
+  );
+};
 
-export default Desert
+export default Desert;

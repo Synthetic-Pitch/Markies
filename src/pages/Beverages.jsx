@@ -1,12 +1,11 @@
-import BeveragesCom from "../components/Beverages/BeveragesCom"
-
+import BeveragesCom from "../components/Beverages/BeveragesCom";
 
 const Beverages = () => {
   return (
     <div className="beverages">
-      <BeveragesCom/>
+      <BeveragesCom />
     </div>
-  )
-}
+  );
+};
 
-export default Beverages
+export default Beverages;

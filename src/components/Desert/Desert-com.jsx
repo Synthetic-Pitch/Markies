@@ -1,9 +1,9 @@
-import { useEffect, useState, useContext } from "react";
-import MainMenuData from "../../assets/product-images/MainMenu";
-import "./Main-Menu-Com.css";
-import { MyContext } from "../../Context/GlobalContext";
-import Filtered from "../Filtered/Filtered";
-import MainMenuFooter from "../Footer/Main-Menu-Footer";
+import "./Desert.css";
+import DesertData from "../../assets/product-images/Desert.js";
+import { useContext, useEffect, useState } from "react";
+import { MyContext } from "../../Context/GlobalContext.jsx";
+import Filtered from "../Filtered/Filtered.jsx";
+import MainMenuFooter from "../Footer/Main-Menu-Footer.jsx";
 
 // Function to chunk an array into subarrays of specified size
 const chunkArray = (arr, chunkSize) => {
@@ -14,13 +14,13 @@ const chunkArray = (arr, chunkSize) => {
   return chunkedData;
 };
 
-const MainMenuCom = () => {
+const DesertCom = () => {
   const { UserInput } = useContext(MyContext);
-  const [filteredData, setFilteredData] = useState(MainMenuData);
-  const chunkSize = 2; // Adjust as needed
+  const [filteredData, setFilteredData] = useState(DesertData);
+  const chunkSize = 2;
 
   useEffect(() => {
-    const filtered = MainMenuData.filter((item) =>
+    const filtered = DesertData.filter((item) =>
       item.name.toLowerCase().startsWith(UserInput.toLowerCase())
     );
     setFilteredData(filtered);
@@ -42,4 +42,4 @@ const MainMenuCom = () => {
   );
 };
 
-export default MainMenuCom;
+export default DesertCom;

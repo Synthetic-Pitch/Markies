@@ -1,9 +1,9 @@
-import CartFooter from '../Footer/Cart-Footer';
-import CartOrderContainer from './Cart-Order-Container';
-import './Cart.css';
-import CartPng from '../../assets/web-icon/cart 29.png';
-import { useNavigate } from 'react-router-dom';
-import { useContext } from 'react';
+import CartFooter from "../Footer/Cart-Footer";
+import CartOrderContainer from "./Cart-Order-Container";
+import "./Cart.css";
+import CartPng from "../../assets/web-icon/cart 29.png";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import { MyContext } from "../../Context/GlobalContext";
 
 const CartCom = () => {
@@ -11,7 +11,7 @@ const CartCom = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/mainMenu');
+    navigate("/mainMenu");
   };
 
   return (
@@ -21,7 +21,7 @@ const CartCom = () => {
         <span>{Order.length > 0 ? "Add more" : "Add food"}</span>
       </div>
       {Order.length === 0 && <div>No food selected yet</div>}
-      <div className='cart-map-items'>
+      <div className="cart-map-items">
         {Order.map((item, index) => (
           <CartOrderContainer key={index} item={item} />
         ))}
