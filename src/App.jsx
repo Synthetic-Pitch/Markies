@@ -19,35 +19,34 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import { GlobalContext } from './Context/GlobalContext';
 
 function App() {
-
   return (
-   <GlobalContext>
+    <GlobalContext>
       <GoogleOAuthProvider clientId="795468337489-oqs3dg7q59raqliejpvu5h6nlc70apuf.apps.googleusercontent.com">
-        <Router>
-         <AppContent />
+        <Router basename="/Markies"> {/* Set the basename here */}
+          <AppContent />
         </Router>
       </GoogleOAuthProvider>
-   </GlobalContext>
+    </GlobalContext>
   );
 }
 
 function AppContent() {
   const location = useLocation();
   const isLoginPage = location.pathname === '/login';
-  
+
   return (
     <> 
       {!isLoginPage && <Header />}
       <Routes>
-      <Route path="/Markies/login" element={<Login />} />
-        <Route path="/Markies/home" element={<Home />} />
-        <Route path="/Markies/mainMenu" element={<MainMenu />} />
-        <Route path="/Markies/desert" element={<Desert />} />
-        <Route path="/Markies/beverages" element={<Beverages />} />
-        <Route path="/Markies/cart" element={<Cart />} />
-        <Route path="/Markies/vouchers" element={<Vouchers />} />
-        <Route path="/Markies/profile" element={<Profile />} />
-        <Route path="/Markies/pending" element={<Pending />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/mainMenu" element={<MainMenu />} />
+        <Route path="/desert" element={<Desert />} />
+        <Route path="/beverages" element={<Beverages />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/vouchers" element={<Vouchers />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/pending" element={<Pending />} />
       </Routes>
     </>
   );
